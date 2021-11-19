@@ -1,0 +1,165 @@
+@import url(estilos.css);
+@import url(dark.css);
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+
+}
+/*body*/
+
+body {
+    background: #F1F1F1;
+    font-family:  'Open Sans';
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  
+  body.dark {
+    background: #111111;
+  }
+  
+  a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+
+.contenedor {
+    padding:60px 0;
+    width:90%;
+    max-width:1000px ;
+    margin: auto;
+    overflow: hiddens;
+}
+.titulo{
+    color: 0482e9;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*heade */
+
+header{ 
+    width: 100%;
+    height: 600px;
+    background: #1c92d2; 
+     /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(189, 87%, 97%, 0.555), hsla(201, 76%, 47%, 0.541)), url(../img/portada\ 2.jpg); 
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(189, 87%, 97%, 0.555), hsla(201, 76%, 47%, 0.541)), url(../img/portada\ 2.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; 
+}
+   nav .logotipo {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  nav .enlaces {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  nav .enlaces a {
+    margin-right: 40px;
+  }
+  
+  nav .enlaces a:hover {
+    color: #707070;
+  }
+  
+  .switch {
+    background: #000000;
+    border-radius: 2000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    outline: none;
+  }
+  
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch.active {
+    background: rgb(247, 201, 0);
+    color: #000;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+  
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+  
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+
+
+
